@@ -1,0 +1,234 @@
+body {
+    /*
+    La propriété "color" permet d'indiquer la couleur du texte.
+    */
+    color: windowframe;
+    /*
+    La graisse des traits est fixée automatiquement.
+    */
+    margin: auto;
+    /*
+    Fixe la largeur de l'élément "body" à 600 px
+    */
+    width: 600px;
+    /*
+    LA police est celle de "Reenie Beanie", ou de serif par défaut.
+    */
+    font-family: 'Reenie Beanie', serif;
+    background-color: rgb(148, 86, 42);
+}
+
+
+/*
+Le titre principal a de marges intérieures les valeurs de ses marges haute, droite, gau-
+che et basse sont données par les valeurs qui lui sont associées.
+*/
+
+h1 {
+    /*
+    Pour fixer la marge extérieur.
+    */
+    margin: 50px 0px 0px 50px;
+    /*
+    Pour fixer la taille du texte contenue dans le titre.
+    */
+    font-size: 3em;
+    /*
+    Pour déterminer une police.
+    */
+    font-family: cursive;
+    /*
+    Mettre en italique
+    */
+    font-style: oblique;
+    /*
+    Pour aligner le texte.
+    */
+    text-align: center;
+    /*
+    Pour mettre en capitale.
+    */
+    text-transform: capitalize;
+    /*
+    Pour décorer le titre.
+    */
+    text-decoration: underline blink rgb(19, 14, 7);
+    /*
+    Couleur du texte du titre.
+    */
+    color: black;
+}
+
+
+/*
+Pour définir les  proprités de l'"id" identifié par "Tab".
+*/
+
+#Tab {
+    /*
+    L'élément "Tab" sera décalé par rapport à sa position initiale. La position relative 
+    permet d'effectuer des ajustements, dans la position de l'élément.
+    */
+    position: relative;
+    /*
+    Padding, pour modifier la taille de la marge intérieur de notre élément. Les valeurs 
+    attribuées signifient : 10px en haut, 0 pixel à droite, 10px à gauche, 5px en bas
+    */
+    padding: 10px 0 10px 5px;
+    /*
+    L'arrière plan de "TAB" est fixée à la couleur désigné.
+    */
+    background: #181A12;
+    /*
+    Permet de décorer les bordures de "Tab".
+    */
+    border: solid #99CC66 1px;
+}
+
+
+/*
+Pour fixer la largeur de "Tab".
+*/
+
+body>#Tab {
+    width: 600px;
+}
+
+
+/*
+Instructions concernant l'élément identifié par "Tab" en générale, en particulier les 
+liens associés à chaque photo.
+*/
+
+div#Tab a {
+    /*
+    Un lien fera 50 pixels de largeur.
+    */
+    width: 50px;
+    /*
+    Pour indiquer la taille de la marge extérieur : 10 pixels aux quatre côtés du bloc.
+    */
+    margin: 10px;
+    /*
+
+    */
+    text-align: center;
+    /*
+    "padding", pour modifier la taille de la marge intérieur de nos liens : 5px en haut
+    et 10 px en bas.
+    */
+    padding: 5px 10px;
+    /*
+    "margin" indiquer la taille de la marge extérieur des liens.
+    */
+    margin: 0 0 1px;
+    /*
+    Les liens n'admettent pas de décorations.
+    */
+    text-decoration: none;
+    /*
+    elles apparaitront en blanc.
+    */
+    color: rgb(39, 23, 110);
+}
+
+
+/*
+Instructions concernant l'élément identifié par "Tab" en générale, en particulier les 
+liens associés à chaque photo. Les seront définies pas le pseudo-format "hover", qui
+se traduit par : "quand la souris est au dessus d'un lien..." 
+*/
+
+div#Tab a:hover {
+    /*
+    La couleur des éléments de texte appartenant aux liens de "Tab" seront blanc.
+    */
+    color: #411;
+    /*
+    Pour fixer la couleur de l'arrière plan.
+    */
+    background-color: windowframe;
+}
+
+
+/*
+Instructions concernant les éléments contenues dans les spans, donc les photos. 
+*/
+
+div#Tab a span {
+    /*
+    Pour transformer les images contenues dans les spans en blocs. la valeur qui définie
+    "display" est "none", pour le conteneur "span" de nos images reste blanc par défaut.
+    */
+    display: none;
+    /*
+    La position absolue, permet de placer un élément n'importe où sur la page.
+    */
+    position: absolute;
+    /*
+    Positionnement des images à 200 pixels du haut de la fenêtre.
+    */
+    top: 200px;
+    /*
+    Les marges extérieurs seront fixer automatiquement.
+    */
+    margin: auto;
+    /*
+    600 pixels pour la largeur de l'espace d'affichage des images.
+    */
+    width: 600px;
+    /*
+    500 pixels pour la hauteur de l'espace d'affichage des images.
+    */
+    height: 500px;
+    /*
+    La position en z des images est fixé à 10 pixels.
+    */
+    z-index: 10;
+    /*
+    L'arrière plan de l'espace ou apparaîtront les images est blanc.
+    */
+    background-color: rgb(148, 86, 42);
+}
+
+
+/*
+Instruction pour le conteneur des images.
+*/
+
+div#Tab a:hover span {
+    display: block;
+    /*
+    Sa position en z est fixé à 1.
+    */
+    z-index: 1;
+}
+
+
+/*
+Instructions pour les petites images identifier par la classe "small".
+*/
+
+.small {
+    /*
+    Leurs bordures sont blanches, solides et blanches.
+    */
+    border: 1px solid white;
+    /*
+    Pour fixer la forme du curseur de la souris.
+    */
+    cursor: pointer;
+    /*
+    Pour la hauteur.
+    */
+    height: 50px;
+    /*
+    Pour les marges extérieurs. La marges des marges haute, droite, gauche et bas sont
+    données par les valeurs qui lui sont associées.
+    */
+    margin: 0 0 5px 5px;
+    /*
+    Leur largeur est fixée à 50px.
+    */
+    width: 50px;
+}
